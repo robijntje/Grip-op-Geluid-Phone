@@ -7,6 +7,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.jjoe64.graphview.GraphView;
@@ -21,7 +22,8 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        TextView textView = findViewById(R.id.adviesKort);
+        textView.setText("Hello, World!");
       //  binding = ActivityMainBinding.inflate(getLayoutInflater());
       //  setContentView(binding.getRoot());
         setContentView(R.layout.fragment_home);
@@ -37,5 +39,6 @@ public class HomeActivity extends AppCompatActivity {
         graph.addSeries(series);
 
     }
+
 
 }

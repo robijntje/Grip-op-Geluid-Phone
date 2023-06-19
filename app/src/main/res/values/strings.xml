@@ -3,5 +3,5 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Grafiek</string>
     <string name="title_notifications">Instellingen</string>
-    <string name="veeg_met_twee_vingers_om_in_of_uit_te_zoomen">Veeg met twee vingers om in of uit te zoomen</string>
+    <string name="instructies_grafiek">Veeg met twee vingers om in of uit te zoomen</string>
 </resources>

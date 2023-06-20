@@ -50,15 +50,15 @@ public class MainActivity extends AppCompatActivity {
             System.out.println(i);
         }
 
-        binding.buttonnts.setOnClickListener (new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fragment_sync fragment_sync = new fragment_sync();
-                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                        transaction.replace(R.id.replace, fragment_sync);
-                        transaction.commit();
-            }
-        })
+     //   binding.buttonnts.setOnClickListener (new View.OnClickListener() {
+         //   @Override
+         //   public void onClick(View view) {
+         //       fragment_sync fragment_sync = new fragment_sync();
+         //               FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+         //               transaction.replace(R.id.replace, fragment_sync);
+         //               transaction.commit();
+         //   }
+       // }
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each

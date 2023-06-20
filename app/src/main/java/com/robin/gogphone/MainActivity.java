@@ -1,6 +1,7 @@
 package com.robin.gogphone;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -49,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
             System.out.println(i);
         }
 
+        binding.buttonnts.setOnClickListener (new View.OnClickListener() {
+            Override
+
+            @Override
+            public void onClick(View view) {
+                fragment_sync fragment_sync = new fragment_sync()
+                        FragmentTransaction transaction =
+            }
+        })
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each

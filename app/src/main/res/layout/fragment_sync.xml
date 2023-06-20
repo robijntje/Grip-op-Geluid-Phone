@@ -26,12 +26,14 @@
         android:id="@+id/buttonnts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="454dp"
         android:text="Klik hier"
-        tools:layout="@layout/fragment_sync"
-        android:onClick="@layout/fragment_sync"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
@@ -43,7 +45,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Data synchronisatie"
-
+        tools:layout="@layout/fragment_notifications"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

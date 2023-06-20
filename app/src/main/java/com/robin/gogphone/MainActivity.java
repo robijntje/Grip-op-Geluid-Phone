@@ -29,15 +29,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         //Dit is de code voor de grafiek. Op dit moment maak de grafiek gebruk van mock data.
-        GraphView graph = (GraphView) findViewById(R.id.graph);
+         GraphView graph = (GraphView) findViewById(R.id.graph);
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
+                //Hieronder zijn de data points
                 new DataPoint(0, 1),
                 new DataPoint(1, 5),
                 new DataPoint(2, 3),
                 new DataPoint(3, 2),
                 new DataPoint(4, 6)
         });
+        //Deze code maakt het scrollen in inzoomen mogelijk
+        graph.getViewport().setScalable(true);
+        graph.getViewport().setScalableY(true);
         graph.addSeries(series);
+
+
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
 
 
         BottomNavigationView navView = findViewById(R.id.nav_view);

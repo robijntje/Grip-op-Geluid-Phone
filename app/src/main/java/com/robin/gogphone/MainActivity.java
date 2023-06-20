@@ -52,11 +52,10 @@ public class MainActivity extends AppCompatActivity {
 
         binding.buttonnts.setOnClickListener (new View.OnClickListener() {
             Override
-
-            @Override
             public void onClick(View view) {
                 fragment_sync fragment_sync = new fragment_sync()
-                        FragmentTransaction transaction =
+                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction()
+                        transaction.replace(R.id.)
             }
         })
 

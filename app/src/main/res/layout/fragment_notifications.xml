@@ -29,7 +29,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="54dp"
         android:text="Klik hier"
-        android:onClick="newView"
+        android:onClick="@{() -> setContentView(R.layout.fragment_sync)}"
 
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"

@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
+    public void newView() {
+        setContentView(R.layout.fragment_sync);
+    }
 }
 
 

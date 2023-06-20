@@ -31,12 +31,12 @@ public class MainActivity extends AppCompatActivity {
         //Dit is de code voor de grafiek. Op dit moment maak de grafiek gebruk van mock data.
          GraphView graph = (GraphView) findViewById(R.id.graph);
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
-                //Hieronder zijn de data points
-                new DataPoint(0, 1),
+                //Hieronder zijn de data points. Hier dient uiteindelijk echte data te worden toegevoegd.
+                new DataPoint(0, 7),
                 new DataPoint(1, 5),
-                new DataPoint(2, 3),
-                new DataPoint(3, 2),
-                new DataPoint(4, 6)
+                new DataPoint(2, 1),
+                new DataPoint(3, 9),
+                new DataPoint(4, 8)
         });
         //Deze code maakt het scrollen in inzoomen mogelijk
         graph.getViewport().setScalable(true);

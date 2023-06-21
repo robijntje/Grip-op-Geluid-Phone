@@ -1,16 +1,22 @@
 package com.robin.gogphone.ui.notifications;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
+import com.robin.gogphone.R;
 import com.robin.gogphone.databinding.FragmentNotificationsBinding;
+
 
 public class NotificationsFragment extends Fragment {
 
@@ -18,16 +24,25 @@ public class NotificationsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        // Inflate the fragment's layout
+        View view = inflater.inflate(R.layout.fragment_notifications, container, false);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        // Find the button within the inflated view
+        Button button = view.findViewById(R.id.buttonSync);
 
-        final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+        // Set the click listener for the button
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Test", "Persoon heeft op knop gedrukt.");
+            }
+        });
+
+        return view;
+
     }
+
+
 
     @Override
     public void onDestroyView() {

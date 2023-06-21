@@ -1,10 +1,14 @@
 package com.robin.gogphone;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CompoundButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.activity.ComponentActivity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -63,6 +67,12 @@ public class MainActivity extends AppCompatActivity {
          //               transaction.commit();
          //   }
        // }
+
+      //  Button buttonSync = (Button) findViewById(R.id.buttonSync);
+
+      //  buttonSync.setOnClickListener(view -> {
+     //       Log.d("Test", "User pressed fragment buttonSync");
+      //  });
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         //Dit is de code die de navigatie in de navbar laat werken.

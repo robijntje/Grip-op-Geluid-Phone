@@ -18,6 +18,10 @@ import com.robin.gogphone.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    public void navigateSync() {
+        Navigation.findNavController(this, R.id.nav_host_fragment_activity_main).navigate(R.id.navigation_sync);
+    }
+
     private ActivityMainBinding binding;
 
     @Override
@@ -45,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         graph.addSeries(series);
 
 
-
+        //Loop test
         for (int i = 0; i < 5; i++) {
             System.out.println(i);
         }
@@ -61,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
        // }
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        //Dit is de code die de navigatie in de navbar laat werken.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
                 .build();

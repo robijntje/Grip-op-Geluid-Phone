@@ -10,7 +10,7 @@ public class SyncViewModel extends ViewModel {
 
     public SyncViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("This is sync fragment");
     }
 
     public LiveData<String> getText() {

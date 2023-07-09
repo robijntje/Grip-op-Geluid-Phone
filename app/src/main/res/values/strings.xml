@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GoG Phone</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Grafiek</string>
+    <string name="title_dashboard">Advies</string>
     <string name="title_notifications">Instellingen</string>
     <string name="instructies_grafiek">Veeg met twee vingers om in of uit te zoomen</string>
 </resources>

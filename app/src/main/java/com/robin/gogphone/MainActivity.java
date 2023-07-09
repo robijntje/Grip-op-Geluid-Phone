@@ -20,6 +20,7 @@ import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 import com.robin.gogphone.databinding.ActivityMainBinding;
 
+
 public class MainActivity extends AppCompatActivity {
 
     public void navigateSync() {
@@ -31,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -51,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         graph.getViewport().setScalable(true);
         graph.getViewport().setScalableY(true);
         graph.addSeries(series);
-
 
         //Loop test
         for (int i = 0; i < 5; i++) {

@@ -26,33 +26,22 @@
         android:id="@+id/buttonnts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="254dp"
-        android:layout_marginTop="424dp"
-        android:text="Klik hier"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="268dp"
+        android:text="Terug"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Data synchronisatie"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="138dp"
-        android:text="Kaas"
-        android:textSize="69sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="220dp"
+        android:text="Uw gegevens zijn gesynchroniseerd."
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
